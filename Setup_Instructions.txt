@@ -1,0 +1,3 @@
+Run "sudo ./create_rootfs.sh" to make the root directory for the container and to install the necessary binaries.
+To create the modkcer binary use command "make" or "make all".
+To run an interactive container use command "sudo ./mdocker run sh".
