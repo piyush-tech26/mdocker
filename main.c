@@ -13,10 +13,6 @@
 #include <sys/syscall.h>
 #include <linux/limits.h>
 #include <fcntl.h>
-#include <net/if.h>
-#include <sys/ioctl.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
 #include <ftw.h>
 
 #define STACK_SIZE (1024 * 1024)
@@ -24,7 +20,6 @@
 #define VETH_CONTAINER "veth0"
 #define CONTAINER_IP "10.200.1.2"
 #define HOST_IP "10.200.1.1"
-#define NETMASK "255.255.255.0"
 
 extern char **environ;
 static pid_t child_pid = 0;
