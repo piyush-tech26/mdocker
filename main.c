@@ -43,7 +43,7 @@ int write_file(const char *path, const char *value);
 //for cgroups
 int setup_cgroups(const char *cgroup_path, pid_t pid, long memory_limit, int cpu_percent, int pids_limit);
 void cleanup_cgroup(const char *cgroup_path);
-
+//so that the container could handle the signals recieved properly
 void forward_signal(int sig);
 void setup_signal_forwarding();
 //for overlayfs
